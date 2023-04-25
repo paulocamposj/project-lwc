@@ -1,0 +1,24 @@
+<template>
+    <div class="slds-box slds-theme_default">
+        <div>
+           <p>Empresa: {empresa}</p>
+           <p>CNPJ: {cnpj}</p>
+           <p>Endereço: {endereco}</p>
+        </div>
+        <br>
+        <div lwc:if={visible1}>
+           <p>Produto: {produto}</p>
+           <p>Descrição: {descricao}</p>
+           <p>Preço: {preco}</p>
+        <br>
+        </div>
+        <div lwc:if={visible1}>
+           <h1>Promoção</h1>
+           <p>Oferta1: {oferta1}</p>
+           <p>Oferta2: {oferta2}</p>
+        <br>
+        </div>
+  
+        <lightning-button variant="brand" label="Click here" title="Primary action" onclick={handleClick}></lightning-button>
+     </div>
+</template>
