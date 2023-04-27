@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-box slds-theme_default">
+        <h1 class="slds-text-heading_large">ONE PIECE</h1>
+        <br>
+        <img src="https://s2.glbimg.com/ck4v1_LnCJsOi_P3Yr9NytJ7eiw=/0x0:1200x700/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/Y/d/HMI5j9SWeMHuDqbJTcfQ/one-piece-foto.jpg" alt="">
+        <br>
+        <template for:each={onepiece} for:item="person">
+            <p key={onepiece.key}><br>Personagem: {person.nome}, Profissão: {person.profissao}, Sonho: {person.sonho} <br></p>
+        </template>
+    </div>
+</template>
