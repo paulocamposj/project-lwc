@@ -1,0 +1,13 @@
+<template>
+        <lightning-card title="Formulário">
+            <div class="slds-box slds-theme_default">
+                <lightning-input label="Nome" type="text" name="nome" onchange={nomeOnChange}></lightning-input>
+                <lightning-input label="Peso" type="decimal" name="peso" onchange={pesoOnChange}></lightning-input>
+                <lightning-input label="Altura" type="decimal" name="altura" onchange={alturaOnChange}></lightning-input><br>
+                <lightning-button variant="brand" label="Enviar" onclick={calcularImc}></lightning-button>
+                <br>
+                <br>
+                <p style="font-size: 15px;" lwc:if={visible}>{nome} possui um IMC de: {resultado}</p>
+            </div>
+        </lightning-card>
+</template>
