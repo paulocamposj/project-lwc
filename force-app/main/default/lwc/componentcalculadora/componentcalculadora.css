@@ -1,0 +1,32 @@
+.aqsz{
+    display: flex;
+    justify-content: center;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ 
+.input-a{
+    height: 15vh;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+ 
+lightning-button {
+    margin: 5px;
+}
+
+button{
+    padding: 10px;
+}

@@ -1,0 +1,36 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="slds-box slds-theme_default aqsz">
+
+        <div class="container-1">
+            <input class="input-a" type="text" value={inputValue} readonly><br><br>
+
+            <div class="box-1">
+                <lightning-button label="7" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="8" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="9" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="/" onclick={handleOperatorClick}></lightning-button>
+            </div><br>
+            <div class="box-1">
+                <lightning-button variant="brand-outline" label="4" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="5" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="6" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="*" onclick={handleOperatorClick}></lightning-button>
+            </div><br>
+            <div class="box-1">
+                <lightning-button variant="brand-outline" label="1" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="2" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="3" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="-" onclick={handleOperatorClick}></lightning-button>
+            </div><br>
+            <div class="box-1">
+                <lightning-button variant="brand-outline" label="Clean" onclick={handleClearClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="0" onclick={handleNumberClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="=" onclick={handleEqualClick}></lightning-button>
+                <lightning-button variant="brand-outline" label="+" onclick={handleOperatorClick}></lightning-button>
+            </div>
+
+        </div>
+
+    </div>
+</template>
